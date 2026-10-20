@@ -1,7 +1,7 @@
 class stringfunction {
     public static void main(String[] args) {
         String str = "Hello, World!";
-        String str2 = "Java Programming";
+        
         
         // Length of the string
         int length = str.length();
