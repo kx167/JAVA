@@ -9,6 +9,7 @@ public class stringbasic1 {
         System.out.println(str1.charAt(3));
         System.out.println("Enter a string: ");
         String xy=sc.nextLine();
+        sc.close();
         System.out.println(xy);
     }
 }
