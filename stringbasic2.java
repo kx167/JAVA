@@ -19,6 +19,28 @@ class stringbasic2{
         System.out.println("length of string is:" + trim.length());
         System.out.println("AFTER TRIM IS: " + trim.trim());
         System.out.println("length of string is:" + trim.trim().length());
+        System.out.println("original string is:" + str);
+        System.out.println("kishan in to upper case is:" + str.toUpperCase());
+        System.out.println("original string is:" + name);
+        System.out.println("KISHAN in to lower case is:" + name.toLowerCase());
+
+        String paragraph = "my name is kishan. i am from india. i am a student.";
+        System.out.println("original paragraph is:" + paragraph);
+        System.out.println("substring from 11th position to 17th position is:" + paragraph.substring(11,17));
+
+        System.out.println("is there kishan is contained in paragraph or not:" + paragraph.contains("kishan"));
+         System.out.println("is there kishan... is contained in paragraph or not:" + paragraph.contains("kishan..."));
+
+         int num = 1607;
+         String nmt = String.valueOf(num);
+         System.out.println("integer to string is:" + nmt);
+         System.out.println("when +1 include in num(integer): " + (num + 1));
+         System.out.println("when +1 include in nmt(string): " + (nmt + 1));
+
+         System.out.println("check paragraph starts with my or not:" + paragraph.startsWith("my"));
+            System.out.println("check paragraph ends with student. or not:" + paragraph.endsWith("student."));
+            System.out.println("check paragraph ends with student or not:" + paragraph.endsWith("student"));
+            System.out.println("check paragraph starts with kishan or not:" + paragraph.startsWith("kishan"));
 
 
     }
