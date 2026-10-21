@@ -14,6 +14,12 @@ class stringbasic2{
         String str2 = "  ";
         System.out.println("is string is blank or not:" + str2.isBlank());
         System.out.println("is string is empty or not:" + str2.isEmpty());
+        String trim = "  kishan  "; 
+        System.out.println("ORIGINAL IS: " + trim);
+        System.out.println("length of string is:" + trim.length());
+        System.out.println("AFTER TRIM IS: " + trim.trim());
+        System.out.println("length of string is:" + trim.trim().length());
+
 
     }
 }
