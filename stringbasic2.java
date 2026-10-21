@@ -8,5 +8,9 @@ class stringbasic2{
         System.out.println("name is:" + name);
         System.out.println("both string are equal or not:" + str.equals(name));
         System.out.println("both string are equal or not:(IGNORE ALL CASES)" + str.equalsIgnoreCase(name));
+        String str1 = "";
+        System.out.println("is string empty or not:" + str1.isEmpty());
+        System.out.println("is string is blank or not:" + str1.isBlank());
+        
     }
 }
