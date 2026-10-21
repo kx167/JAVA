@@ -1,0 +1,12 @@
+class stringbasic2{
+    public static void main(String[] args){
+        String str = "kishan";
+        System.out.println("ORIGINAL IS: " + str);
+        System.out.println("length of string is:" + str.length());
+        System.out.println("position of 3rd character is:" + str.charAt(2));
+        String name = "KISHAN";
+        System.out.println("name is:" + name);
+        System.out.println("both string are equal or not:" + str.equals(name));
+        System.out.println("both string are equal or not:(IGNORE ALL CASES)" + str.equalsIgnoreCase(name));
+    }
+}
