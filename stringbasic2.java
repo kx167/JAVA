@@ -11,6 +11,9 @@ class stringbasic2{
         String str1 = "";
         System.out.println("is string empty or not:" + str1.isEmpty());
         System.out.println("is string is blank or not:" + str1.isBlank());
-        
+        String str2 = "  ";
+        System.out.println("is string is blank or not:" + str2.isBlank());
+        System.out.println("is string is empty or not:" + str2.isEmpty());
+
     }
 }
