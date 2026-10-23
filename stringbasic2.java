@@ -42,6 +42,21 @@ class stringbasic2{
             System.out.println("check paragraph ends with student or not:" + paragraph.endsWith("student"));
             System.out.println("check paragraph starts with kishan or not:" + paragraph.startsWith("kishan"));
 
+            char[] ch = name.toCharArray();
+            System.out.println("char array is:");
+            for(char ch1: ch){
+                System.out.println(ch1);
+            }
+
+            String [] strarr = paragraph.split(" ");
+            //System.out.println("string array is:"+java.util.Arrays.toString(strarr));
+            for(String str3: strarr){
+                System.out.println(str3);
+            }
+
+            String rpl = paragraph.replace("kishan", "vinzuda");
+            System.out.println("original paragraph is:" + paragraph);
+            System.out.println("paragraph after replacement is:" + rpl);
 
     }
 }
