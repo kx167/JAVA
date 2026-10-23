@@ -10,6 +10,7 @@ class stringbasic3{
         int count = 0;
         for(int i=0; i<str.length(); i++){
             char ch = str.charAt(i);
+            System.out.println(ch);
             count++;
         }
         System.out.println("total number of characters in string is:" + count);
