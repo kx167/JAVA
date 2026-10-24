@@ -52,7 +52,13 @@ class stringbasic3{
         }
         return true;
     }
+    static int mutableStringLength(String str){
+        StringBuilder sb = new StringBuilder(str);
+        int len = sb.length();
+        return len;
 
+    }
+    
     
     public static void main(String[] args){
         String str = "KISHAN";
@@ -63,6 +69,9 @@ class stringbasic3{
         countvowels(str);
         String rev = reverseString(str);
         System.out.println("reverse of the string is:" + rev);
-       System.out.println("is the string palindrome? " + palindrome(str));
+        System.out.println("is the string palindrome? " + palindrome(str));
+        int mutableLen = mutableStringLength(str);
+        System.out.println("length of the mutable string is:" + mutableLen);
+
     }
 }
