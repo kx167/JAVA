@@ -51,7 +51,10 @@ class stringbasic3{
             }
         }
         return true;
+
     }
+
+    /*mutable */
     static int mutableStringLength(String str){
         StringBuilder sb = new StringBuilder(str);
         int len = sb.length();
