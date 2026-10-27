@@ -26,6 +26,15 @@ public class basicmath {
         }
         System.out.println("Sum of digits: " + sum);
     }
+    static void reverseofnumber(int number){
+        int reverse = 0;
+        while(number != 0){
+            int digit = number % 10;
+            reverse = reverse * 10 + digit;
+            number = number / 10;
+        }
+        System.out.println("Reverse of number: " + reverse);
+    }
     
     public static void main(String[] args) {
         /*DIGITS OF NUMBER */
@@ -34,5 +43,6 @@ public class basicmath {
         digitsofnumber(number);
         countdigits(number);
         sumofdigit(number);
+        reverseofnumber(number);
     }
 }
