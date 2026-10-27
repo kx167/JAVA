@@ -7,10 +7,19 @@ public class basicmath {
         number = number / 10;
        }
     }
+    static void countdigits(int number) {
+        int count = 0;
+        while (number != 0) {
+            number = number / 10;
+            count++;
+        }
+        System.out.println("Number of digits: " + count);
+    }
     public static void main(String[] args) {
         /*DIGITS OF NUMBER */
         int number = 12345;
-        System.out.println("Digits of the number " + number + " are:");
+       
         digitsofnumber(number);
+        countdigits(number);
     }
 }
