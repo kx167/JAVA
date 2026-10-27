@@ -10,10 +10,21 @@ public class basicmath {
     static void countdigits(int number) {
         int count = 0;
         while (number != 0) {
-            number = number / 10;
+            int digit = number % 10;
             count++;
+            number = number / 10;
         }
-        System.out.println("Number of digits: " + count);
+       System.out.println("Number of digits: " + count);
+    }
+    static void sumofdigit(int number){
+        int sum=0;
+        while(number !=0 ){
+            int digit = number % 10;
+            sum = sum + digit;
+            number = number / 10;
+            
+        }
+        System.out.println("Sum of digits: " + sum);
     }
     public static void main(String[] args) {
         /*DIGITS OF NUMBER */
@@ -21,5 +32,6 @@ public class basicmath {
        
         digitsofnumber(number);
         countdigits(number);
+        sumofdigit(number);
     }
 }
