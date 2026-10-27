@@ -10,9 +10,9 @@ public class basicmath {
     static void countdigits(int number) {
         int count = 0;
         while (number != 0) {
-            int digit = number % 10;
-            count++;
             number = number / 10;
+            count++;
+           
         }
        System.out.println("Number of digits: " + count);
     }
