@@ -1,12 +1,14 @@
-/**
- * basicmath
- */
 public class basicmath {
-public static void main(String[] args) {
-    int a = 10;
-    int b = 20;
-    int sum = a + b;
-    System.out.println("Sum of " + a + " and " + b + " is: " + sum);
-}
-    
+    static int digitsofnumber(int number) {
+        int count = 0;
+        while (number != 0) {
+            number /= 10;
+            count++;
+        }
+        return count;
+    }
+    public static void main(String[] args) {
+        int result = digitsofnumber(12345);
+        System.out.println("Number of digits: " + result);
+    }
 }
