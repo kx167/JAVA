@@ -26,6 +26,7 @@ public class basicmath {
         }
         System.out.println("Sum of digits: " + sum);
     }
+    
     public static void main(String[] args) {
         /*DIGITS OF NUMBER */
         int number = 12345;
