@@ -77,6 +77,10 @@ static int getgcd(int a, int b) {
     }   
     return a;
 }
+static int getlcm(int a, int b) {
+    return (a * b) / getgcd(a, b);
+}
+
     
     public static void main(String[] args) {
         /*DIGITS OF NUMBER */
@@ -95,6 +99,8 @@ static int getgcd(int a, int b) {
     }
     int gcd = getgcd(48, 18);
     System.out.println("GCD of 48 and 18 is: " + gcd);
+    int lcm = getlcm(48, 18);
+    System.out.println("LCM of 48 and 18 is: " + lcm);
 
     }
 }
