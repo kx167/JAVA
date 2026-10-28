@@ -35,14 +35,30 @@ public class basicmath {
         }
         System.out.println("Reverse of number: " + reverse);
     }
+    static void palindrome(int number){
+        int original = number;
+        int reverse = 0;
+        while(number != 0){
+            int digit = number % 10;
+            reverse = reverse * 10 + digit;
+            number = number / 10;
+        }
+        if(original == reverse){
+            System.out.println("The number is a palindrome.");
+        } else {
+            System.out.println("The number is not a palindrome.");
+        }
+    }
     
     public static void main(String[] args) {
         /*DIGITS OF NUMBER */
-        int number = 12345;
+        int number = 12321;
        
         digitsofnumber(number);
         countdigits(number);
         sumofdigit(number);
         reverseofnumber(number);
+        palindrome(number);
+
     }
 }
