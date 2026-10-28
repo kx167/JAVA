@@ -64,7 +64,7 @@ public class basicmath {
         return false;
     }
 
-    for (int i = 2; i <= Math.sqrt(number); i++) {
+    for (int i = 2; i * i <= number; i++) {
 
         if (number % i == 0) {
             return false;
@@ -76,7 +76,7 @@ public class basicmath {
     
     public static void main(String[] args) {
         /*DIGITS OF NUMBER */
-        int number = 12321;
+        int number = 7;
        
         digitsofnumber(number);
         countdigits(number);
