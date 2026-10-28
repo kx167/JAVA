@@ -49,6 +49,15 @@ public class basicmath {
             System.out.println("The number is not a palindrome.");
         }
     }
+
+    static int evenodd(int number){
+        if(number % 2 == 0){
+            System.out.println("the number is even");
+        } else {
+            System.out.println("the number is odd");
+        }
+        return number;
+    }
     
     public static void main(String[] args) {
         /*DIGITS OF NUMBER */
@@ -59,6 +68,7 @@ public class basicmath {
         sumofdigit(number);
         reverseofnumber(number);
         palindrome(number);
+        evenodd(number);
 
     }
 }
