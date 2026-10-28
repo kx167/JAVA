@@ -68,6 +68,15 @@ public class basicmath {
 
     return true;
 }
+
+static int getgcd(int a, int b) {
+    while (b != 0) {    
+        int temp = b;
+        b = a % b;
+        a = temp;
+    }   
+    return a;
+}
     
     public static void main(String[] args) {
         /*DIGITS OF NUMBER */
@@ -84,6 +93,8 @@ public class basicmath {
     } else {
         System.out.println("The number is not prime.");
     }
+    int gcd = getgcd(48, 18);
+    System.out.println("GCD of 48 and 18 is: " + gcd);
 
     }
 }
