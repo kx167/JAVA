@@ -198,6 +198,54 @@ public class basicmath {
     }
 
 
+    // 11. Check Perfect Number
+    // Example: 28 -> true
+    static boolean checkPerfectNumber(int number) {
+
+        if (number <= 1) {
+            return false;
+        }
+
+        int sum = 1;
+
+        for (int i = 2; i <= number / i; i++) {
+
+            if (number % i == 0) {
+
+                int firstFactor = i;
+                int secondFactor = number / i;
+
+                sum = sum + firstFactor;
+
+                // Avoid adding the same factor twice
+                if (firstFactor != secondFactor) {
+
+                    sum = sum + secondFactor;
+                }
+            }
+        }
+
+        return sum == number;
+    }
+
+    // 12. Print all prime numbers from 1 to n
+// Example: 20 -> 2 3 5 7 11 13 17 19
+static void printPrimeNumbers(int number) {
+
+    System.out.println("Prime numbers from 1 to " + number + ":");
+
+    for (int i = 2; i <= number; i++) {
+
+        if (isPrime(i)) {
+
+            System.out.print(i + " ");
+        }
+    }
+
+    System.out.println();
+}
+
+
     // Main method
     public static void main(String[] args) {
 
@@ -282,5 +330,19 @@ public class basicmath {
 
             System.out.println("The number is not Armstrong.");
         }
+
+
+        // Perfect Number
+        if (checkPerfectNumber(number)) {
+
+            System.out.println("The number is a perfect number.");
+
+        } else {
+
+            System.out.println("The number is not a perfect number.");
+        }
+
+        // Print all prime numbers
+printPrimeNumbers(7);
     }
 }
