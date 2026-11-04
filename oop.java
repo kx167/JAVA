@@ -21,6 +21,7 @@ public class oop{
             s1.gender = "Male";
             s1.displayInfo();
 /*maintain */
+    System.out.println("maintain");
 
     }
 }
