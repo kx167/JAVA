@@ -11,6 +11,13 @@ public class std{
     public std(){
         System.out.println("This is constructor");
     }
+
+/* Parameterize constructor */    
+    public std(int id, String name, int age){
+        this.id = id;
+        this.name = name;
+        this.age = age;
+    }
 /* Method to display the student's information */
     public void info(){
         System.out.println("Student id: " + id);
