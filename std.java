@@ -9,14 +9,24 @@ public class std{
 /* Constructor for the std class */
 
     public std(){
-        System.out.println("This is constructor");
+
+        System.out.println("This is default constructor");
     }
 
 /* Parameterize constructor */    
     public std(int id, String name, int age){
+        System.out.println("This is parameterized constructor");
         this.id = id;
         this.name = name;
         this.age = age;
+    }
+
+    /* copy constructor */
+    public std(std s){
+        System.out.println("This is copy constructor");
+        this.id = s.id;
+        this.name = s.name;
+        this.age = s.age;
     }
 /* Method to display the student's information */
     public void info(){

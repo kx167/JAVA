@@ -26,7 +26,15 @@ public class app{
         s2.info();
         s2.bunk();
         s2.study();
-        s2.sleep();       
+        s2.sleep();     
+        
+ /* created object with copy constructor */
+    std s3 = new std(s2);
+        s3.info();
+        s3.bunk();
+        s3.study();
+        s3.sleep();
 
     }
+    
 }
