@@ -9,6 +9,9 @@ public class app{
         System.out.println("Student id: " + s1.id);
         System.out.println("Student name: " + s1.name);
         System.out.println("Student age: " + s1.age);
-        
+
+        s1.bunk();
+        s1.study();
+        s1.sleep();
     }
 }
