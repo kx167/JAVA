@@ -34,6 +34,55 @@ public class app{
         s3.bunk();
         s3.study();
         s3.sleep();
+        
+        
+/*
+    LIFE CYCLE OF AN OBJECT IN JAVA
+
+    1. OBJECT CREATION:
+       - An object is created using the 'new' keyword.
+       - Memory is allocated in the Heap area.
+       Example:
+       std s1 = new std();
+
+    2. OBJECT INITIALIZATION:
+       - Instance variables get default values.
+       - Constructor is called to initialize the object.
+       Example:
+       std s1 = new std(1, "Kishan", 22);
+
+    3. OBJECT USAGE:
+       - We access object variables and methods using
+         the object reference.
+       Example:
+       s1.info();
+       s1.study();
+
+    4. OBJECT ELIGIBLE FOR GARBAGE COLLECTION:
+       - When an object has no reachable references,
+         it becomes eligible for Garbage Collection.
+       Example:
+       s1 = null;
+
+    5. GARBAGE COLLECTION:
+       - JVM's Garbage Collector identifies eligible
+         objects and may reclaim their memory.
+       - System.gc() requests garbage collection,
+         but does not guarantee immediate execution.
+       Example:
+       System.gc();
+
+
+    IMPORTANT POINTS:
+
+    - Objects are generally allocated in Heap memory.
+    - References are used to access objects.
+    - Multiple references can point to the same object.
+    - An object becomes eligible for GC when it is
+      no longer reachable.
+    - Eligible for GC does not mean immediately deleted.
+*/
+
 
     }
     
