@@ -12,8 +12,10 @@ public class app{
         System.out.println("Student name: " + s1.name);
         System.out.println("Student age: " + s1.age);
 /* call methods of object */
+        s1.info();
         s1.bunk();
         s1.study();
         s1.sleep();
+
     }
 }

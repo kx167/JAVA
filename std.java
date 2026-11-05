@@ -11,6 +11,12 @@ public class std{
     public std(){
         System.out.println("This is constructor");
     }
+/* Method to display the student's information */
+    public void info(){
+        System.out.println("Student id: " + id);
+        System.out.println("Student name: " + name);
+        System.out.println("Student age: " + age);
+    }
 
 /* Method to simulate the student studying */
     public void study(){
@@ -24,4 +30,6 @@ public class std{
     public void sleep(){
         System.out.println(name + " is sleeping");
     }
+
+
 }
