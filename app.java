@@ -82,7 +82,8 @@ public class app{
       no longer reachable.
     - Eligible for GC does not mean immediately deleted.
 */
-/*Encapsulatio */
+/*Encapsulation */
+
 
 
     }
