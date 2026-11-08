@@ -84,7 +84,12 @@ public class app{
 */
 /*Encapsulation */
 
-
+// Encapsulation is the process of wrapping data (variables)
+// and methods into a single unit (class).
+// It is achieved by declaring variables as private and
+// providing public getter and setter methods to access and
+// modify the data.
+// It is also known as Data Hiding.
 
     }
     
