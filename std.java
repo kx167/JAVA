@@ -6,6 +6,14 @@ public class std{
     public int id;
     public String name;
     public int age;
+    private String address; // private variable
+
+    public String getaddress(){
+        return address;
+    }
+    public void setaddress(String address){
+        this.address = address;
+    }
 /* Constructor for the std class */
 
     public std(){
@@ -14,11 +22,12 @@ public class std{
     }
 
 /* Parameterize constructor */    
-    public std(int id, String name, int age){
+    public std(int id, String name, int age,String address){
         System.out.println("This is parameterized constructor");
         this.id = id;
         this.name = name;
         this.age = age;
+        this.address = address;
     }
 
     /* copy constructor */
@@ -33,6 +42,7 @@ public class std{
         System.out.println("Student id: " + id);
         System.out.println("Student name: " + name);
         System.out.println("Student age: " + age);
+        System.out.println("Student address: " + address);
     }
 
 /* Method to simulate the student studying */
@@ -47,6 +57,11 @@ public class std{
     public void sleep(){
         System.out.println(name + " is sleeping");
     }
+
+    private void address(){
+        System.out.println("Student address: " + address);
+    }
+
 
 
 }

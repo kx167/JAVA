@@ -7,12 +7,14 @@ public class app{
         s1.name = "kishan";
         s1.id = 1;
         s1.age = 22;
+        s1.setaddress("navsari"); // setting private variable using public method
 
  /* print values of object */
 
         System.out.println("Student id: " + s1.id);
         System.out.println("Student name: " + s1.name);
         System.out.println("Student age: " + s1.age);
+        System.out.println("Student address: " + s1.getaddress()); // getting private variable using public method
 
 /* call methods of object */
 
@@ -22,11 +24,12 @@ public class app{
         s1.sleep();
 
 /* created object with parameterized constructor */
- std s2 = new std(2, "vinzuda",23);
+ std s2 = new std(2, "vinzuda",23,"navsari");
         s2.info();
         s2.bunk();
         s2.study();
-        s2.sleep();     
+        s2.sleep(); 
+        //s2.address(); // calling private method within the same class    
         
  /* created object with copy constructor */
     std s3 = new std(s2);
