@@ -58,9 +58,7 @@ public class std{
         System.out.println(name + " is sleeping");
     }
 
-    private void address(){
-        System.out.println("Student address: " + address);
-    }
+    
 
 
 
