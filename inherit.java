@@ -3,10 +3,10 @@ public class inherit{
         
 
         owner myowner = new owner();
-        myowner.name="tommy";
+        myowner.setName("tommy");;
         myowner.breed="labrador";
         myowner.ownername="john";
-        System.out.println("my dog name is:" + myowner.name + " and breed is:" + myowner.breed + 
+        System.out.println("my dog name is:" + myowner.getName() + " and breed is:" + myowner.breed + 
         " and owner name is:" + myowner.ownername);
         dog.vegetarian();
         
@@ -14,7 +14,7 @@ public class inherit{
 }
 
 class animal{
-    String name;
+   private String name;
 
     public static void eat(){
         System.out.println("Animal is eating");
@@ -24,6 +24,14 @@ class animal{
     }
     public static void nonvegetarian(){
         System.out.println("Animal is non vegetarian");
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
 }
