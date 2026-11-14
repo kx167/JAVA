@@ -9,6 +9,7 @@ public class inherit{
         System.out.println("my dog name is:" + myowner.getName() + " and breed is:" + myowner.breed + 
         " and owner name is:" + myowner.ownername);
         dog.vegetarian();
+        myowner.hii();
         
     }
 }
@@ -41,4 +42,17 @@ class dog extends animal{
 
 class owner extends dog{
     String ownername;
+
+    private void hello(){
+        System.out.println("hello");
+    }
+
+    public void hii(){
+        hello();
+    }
+}
+
+class society extends owner{
+    String societyname;
+   
 }
