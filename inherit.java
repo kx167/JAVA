@@ -39,9 +39,9 @@ class animal{
 class dog extends animal{
     String breed;    
 }
-
 class owner extends dog{
     String ownername;
+    
 
     private void hello(){
         System.out.println("hello");
@@ -51,8 +51,6 @@ class owner extends dog{
         hello();
     }
 }
-
 class society extends owner{
     String societyname;
-   
 }

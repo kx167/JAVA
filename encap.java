@@ -32,9 +32,9 @@ public class encap{
 }
 
 class hero{
-    private String name;
-    private int age;
-    private int id;
+    protected String name;
+    protected int age;
+    protected int id;
 
     public hero(){
         System.out.println("This is default constructor");
