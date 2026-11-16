@@ -39,7 +39,7 @@ class hero{
     public hero(){
         System.out.println("This is default constructor");
     }
-
+    
     public void SetName(String name){
         this.name = name;
     
@@ -51,7 +51,7 @@ class hero{
 
     public void SetAge(int age){
         if(age<0){
-            System.out.println("Age cannot be nagative");
+            System.out.println("Age cannot be negative");
         }else{
             this.age = age;
         }
