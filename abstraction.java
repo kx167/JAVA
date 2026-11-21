@@ -1,5 +1,12 @@
 public class abstraction{
     public static void main(String[]args){
+        birds b = new sparrow();
+        b.eat();
+        b.fly();
+
+        b = new crow();
+        b.eat();
+        b.fly();
         
     }
 }
@@ -11,10 +18,20 @@ abstract class birds{
 
 class sparrow extends birds{
     void fly(){
-          System.out.println("Bird Is Flying");
+          System.out.println("sparrow Is Flying");
     }
 
     void eat(){
-        System.out.println("Birds are eating");
+        System.out.println("sparrow are eating");
+    }
+}
+
+class crow extends birds{
+    void fly(){
+          System.out.println("crow Is Flying");
+    }
+
+    void eat(){
+        System.out.println("crow are eating");
     }
 }
