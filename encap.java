@@ -69,7 +69,7 @@ class hero{
         return this.id;
     }
     public hero(int id, String name, int age){
-        this.id = id;
+Setid(id);
         this.name = name;
         this.age = age;
     }

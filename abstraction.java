@@ -1,13 +1,16 @@
 public class abstraction{
     public static void main(String[]args){
-        birds b = new sparrow();
-        b.eat();
-        b.fly();
+        //birds b = new sparrow();
+        dothing(new sparrow());
 
-        b = new crow();
-        b.eat();
-        b.fly();
+        //b = new crow();
+       dothing(new crow());
         
+    }
+
+    public static void dothing(birds b){
+        b.fly();
+        b.eat();
     }
 }
 
