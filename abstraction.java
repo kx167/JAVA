@@ -3,3 +3,18 @@ public class abstraction{
         
     }
 }
+
+abstract class birds{
+    abstract void fly();
+    abstract void eat();
+}
+
+class sparrow extends birds{
+    void fly(){
+          System.out.println("Bird Is Flying");
+    }
+
+    void eat(){
+        System.out.println("Birds are eating");
+    }
+}
