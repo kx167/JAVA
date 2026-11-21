@@ -18,7 +18,7 @@ public class polymor{
     }
 
     // method to demonstrate polymorphism in java(method overriding)
-    public static void DoDrawingStuff(shape s){
+    public static void DoDrawingStuff(shapes s){
         s.shape();
     }
 }
@@ -38,20 +38,20 @@ class calculator{
     }
 }
 // example of polymorphism in java(method overriding)
-class shape{
-    public void shape(){
+class shapes{
+     public void shape(){
         System.out.println("This is shape");
     }
 }
 
-class rectangle extends shape{
+class rectangle extends shapes{
     @Override 
     public void shape(){
         System.out.println("This is rectangle");
     }
 }
 
-class circle extends shape{
+class circle extends shapes{
     @Override 
     public void shape(){
         System.out.println("This is circle");
