@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.*;
 
 public class javacollection{
     public static void main(String[]args){
@@ -25,6 +26,8 @@ public class javacollection{
         List2.addAll(List);
 
         System.out.println(List2);
+
+       
         
     }
 }
