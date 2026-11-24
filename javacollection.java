@@ -15,6 +15,16 @@ public class javacollection{
         //List Remove
         List.remove(2);
         System.out.println(List);
+
+
+        //add all
+
+        ArrayList<Integer> List2 = new ArrayList<>();
+        List2.add(101);
+        List2.add(102);
+        List2.addAll(List);
+
+        System.out.println(List2);
         
     }
 }
