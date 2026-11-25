@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
-import java.util.*;
+
 
 public class javacollection{
     public static void main(String[]args){
@@ -25,6 +25,9 @@ public class javacollection{
         List2.add(102);
         List2.addAll(List);
 
+        System.out.println(List2);
+
+        List2.removeAll(List);
         System.out.println(List2);
 
        
