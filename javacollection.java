@@ -30,6 +30,9 @@ public class javacollection{
         List2.removeAll(List);
         System.out.println(List2);
 
+        System.out.println(List.size());
+        System.out.println(List2.size());
+
        
         
     }
