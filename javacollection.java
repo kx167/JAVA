@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 
@@ -41,7 +42,32 @@ public class javacollection{
         List2.clear();
         System.out.println("after clearing"+List2);
 
+       Iterator<Integer>iterator = List.iterator();
        
+              
+       System.out.println(iterator.hasNext());
+
+    while (iterator.hasNext()) {
+        System.out.println("Element : "+ iterator.next());
+        
+       }
+       System.out.println(iterator.hasNext());
+
+      System.out.println(List.get(1)); 
+      List.set(0, 30);
+      List.set(1, 40);
+      System.out.println(List);
+
+      Object[] arr = List.toArray();
+      for(Object obj:arr){
+        System.out.println(obj);
+      }
+ 
+     System.out.println(List.contains(101));  
+          System.out.println(List.contains(30));
+               System.out.println(List.contains(-30));  
+  
+
         
     }
 }
