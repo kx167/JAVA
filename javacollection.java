@@ -23,6 +23,9 @@ public class javacollection{
         ArrayList<Integer> List2 = new ArrayList<>();
         List2.add(101);
         List2.add(102);
+        List2.add(103);
+        List2.add(104);
+        List2.add(105);
         List2.addAll(List);
 
         System.out.println(List2);
@@ -32,6 +35,11 @@ public class javacollection{
 
         System.out.println(List.size());
         System.out.println(List2.size());
+
+        System.out.println("print List 2" +List2);
+
+        List2.clear();
+        System.out.println("after clearing"+List2);
 
        
         
