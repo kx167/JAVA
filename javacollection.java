@@ -40,16 +40,10 @@ public class javacollection{
         List2.clear();
         System.out.println("after clearing"+List2);
 
-       Iterator<Integer>iterator = List.iterator();
+      
        
               
-       System.out.println(iterator.hasNext());
-
-    while (iterator.hasNext()) {
-        System.out.println("Element : "+ iterator.next());
-        
-       }
-       System.out.println(iterator.hasNext());
+      
 
       System.out.println(List.get(1)); 
       List.set(0, 30);
@@ -75,14 +69,22 @@ public class javacollection{
      List.add(7);
      List.add(77);
 
+     
+
      System.out.println("LIST 1 BEFORE SORTING" + List);
      Collections.sort(List);
      System.out.println("LIST 1 AFTER SORTING" + List);
+Iterator<Integer>iterator = List.iterator();
+     while (iterator.hasNext()) {
+        System.out.println("Element : "+ iterator.next());
+        
+       }
 
      Collections.sort(List,Collections.reverseOrder());
      System.out.println("LIST 1 AFTER SORTING DES" + List);
 
 
+ 
 
 
 
