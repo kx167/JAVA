@@ -1,6 +1,4 @@
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 
 public class javacollection{
@@ -67,6 +65,26 @@ public class javacollection{
           System.out.println(List.contains(30));
                System.out.println(List.contains(-30));  
   
+     List.add(10);
+     List.add(20);
+     List.add(50);
+     List.add(5);
+     List.add(0);
+     List.add(3);
+     List.add(6);
+     List.add(7);
+     List.add(77);
+
+     System.out.println("LIST 1 BEFORE SORTING" + List);
+     Collections.sort(List);
+     System.out.println("LIST 1 AFTER SORTING" + List);
+
+     Collections.sort(List,Collections.reverseOrder());
+     System.out.println("LIST 1 AFTER SORTING DES" + List);
+
+
+
+
 
         
     }
