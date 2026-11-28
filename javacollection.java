@@ -176,5 +176,20 @@ public class javacollection {
         System.out.println("Original List: " + list);
         System.out.println("New List: " + newlist);
 
+
+       // =====================================
+       // 16. ENSURECAPACITY() METHOD
+       // =====================================
+
+       ArrayList<Integer>Marks = new ArrayList<>();
+       Marks.ensureCapacity(100);
+       
+
+       // =====================================
+       // 16. ISEMPTY() METHOD
+       // ===================================== 
+       System.out.println("check is empty or not : "+Marks.isEmpty());     
+
+
     }
 }
